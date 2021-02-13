@@ -60,6 +60,29 @@ p {
   left: 15vw;
 }
 
+.title .price span {
+  text-decoration-line: line-through;
+  opacity: 50%;
+}
+
+.title .discounted {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  text-align: center;
+  padding-left: 0.4rem;
+  padding-bottom: 0.4rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: #ff954d;
+  color: #fffcf8;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  top: 10vw;
+}
+
 .productInfo {
   position: absolute;
   top: 25vw;
@@ -77,4 +100,26 @@ p {
   float: right;
   width: 40rem;
   margin-top: -3rem;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  top: 5vw;
+  left: 12vw;
+}
+
+.breadcrumbs li {
+  margin-right: 1rem;
+  font-family: "Work Sans", sans-serif;
+  color: #fffcf8;
+  font-size: 0.9rem;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  color: #fffcf8;
+  font-size: 0.9rem;
 }

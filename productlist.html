@@ -24,21 +24,25 @@
     </header>
 
     <main>
-      <article class="smallProduct onSale">
-        <a href="product.html"
-          ><img
-            src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp"
-            alt="Big Cat Backpack Black"
-        /></a>
-        <h3>Big Cat Backpack Black</h3>
-        <p class="subtitle">Backpacks | Puma</p>
-        <div class="discounted">
-          <p>-55%</p>
-        </div>
-        <p class="price">DKK 585 <span>DKK 1299</span></p>
-      </article>
-
-      <article class="smallProduct soldOut">
+      <template id="smallProductTemplate">
+        <article class="smallProduct">
+          <a href="product.html"
+            ><img
+              class="productimage"
+              src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp"
+              alt="Big Cat Backpack Black"
+          /></a>
+          <h3>Big Cat Backpack Black</h3>
+          <p class="subtitle">Backpacks | Puma</p>
+          <div class="discounted">
+            <p>-55%</p>
+            <p class="prev">DKK 1299</p>
+          </div>
+          <p class="price">DKK 585</p>
+          
+        </article>
+      </template>
+      <!-- <article class="smallProduct soldOut">
         <a href="product.html"
           ><img
             src="https://kea-alt-del.dk/t7/images/webp/640/1525.webp"
@@ -78,7 +82,8 @@
         <div class="discounted">
           <p>-0%</p>
         </div>
-      </article>
+      </article> -->
     </main>
+    <script src="productlist.js"></script>
   </body>
 </html>
